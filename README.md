@@ -16,7 +16,7 @@ This website is designed to showcase solar panel installation services, provide 
 - CSS3  
 
  Live Website
- https://your-netlify-link.netlify.app  
+ https://hd-solarsandtraders.netlify.app
 
  Future Improvements
 - Add testimonials section  

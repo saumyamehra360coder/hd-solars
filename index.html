@@ -2,416 +2,227 @@
 <html>
 <head>
 <title>HD Solars And Traders</title>
-<link rel="stylesheet" href="style.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    scroll-behavior: smooth;
+}
+
+/* HERO */
+header {
+    background: url('solar-bg.jpg') no-repeat center/cover;
+    height: 90vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+.btn {
+    background: linear-gradient(to right, #2563eb, #7c3aed);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* NAV */
+nav {
+    background: #1e3a8a;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* SECTION */
+section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* COUNTER */
+.counter {
+    font-size: 40px;
+    color: #2563eb;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+    background: #f3f4f6;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+/* ANIMATION */
+.fade {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
 </head>
-    
 
 <body>
 
 <header>
-
-    <video autoplay muted loop class="bg-video">
-        <source src="solar.mp4" type="video/mp4">
-    </video>
-
-    <div class="overlay"></div>
-
-    <img src="logo.png" class="logo">
-
-    <h1 class="typing gradient-text">HD Solars And Traders</h1>
-
-    <p>Power Your Home with Clean Solar Energy 🌞</p>
-
-    <a href="#contact" class="btn">Get Solar Installed 🚀</a>
-
+<h1>Save Money with Solar Energy ⚡</h1>
+<p>Reduce electricity bills up to 70%</p>
+<a href="#contact" class="btn">Get Started 🚀</a>
 </header>
 
 <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#why">Why Us</a>
-    <a href="#process">Process</a>
-    <a href="#contact">Contact</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#why">Why Us</a>
+<a href="#process">Process</a>
+<a href="#contact">Contact</a>
 </nav>
 
-<!-- HOME -->
-<section id="home">
+<section>
 <div class="container">
-
-<h2>Welcome to HD Solars And Traders</h2>
-
-<p>
-We are your trusted solar installation experts in Haldwani, Uttarakhand.
-Our mission is to help you reduce electricity bills and switch to clean, renewable energy.
-</p>
-
-<div class="card">
-<p>
-✔ Save up to 70% on electricity bills <br>
-✔ Government subsidy assistance available <br>
-✔ High-quality solar panels & professional installation <br>
-✔ Reliable service and long-term support
-</p>
-</div>
-
-<p>
-Join hundreds of satisfied customers who have already switched to solar energy with us.
-</p>
-
-<a href="#contact" class="btn">Get Free Consultation 🚀</a>
-
+<h2 class="counter" id="counter">0+</h2>
+<p>Installations Completed</p>
 </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
+<section id="about" class="fade">
 <div class="container">
-
 <h2>About Us</h2>
-
-<p>
-HD Solars And Traders is a trusted solar installation service based in Haldwani, Uttarakhand,
-led by Mr. Hemant Singh Mehra. With years of experience in the solar industry, we are committed
-to delivering reliable, efficient, and affordable solar solutions.
-</p>
-
-<div class="card">
-<p>
-We specialize in helping homes and businesses switch to clean energy through high-quality solar panel installations.
-From site inspection to final installation and government subsidy support, we handle everything for you.
-</p>
-</div>
-
-<p>
-Our goal is simple — to make solar energy accessible, affordable, and hassle-free for everyone.
-We believe in honest work, customer satisfaction, and long-term relationships.
-</p>
-
-<div class="card">
-<p>
-✔ Experienced & skilled team <br>
-✔ Complete subsidy guidance <br>
-✔ High-quality materials <br>
-✔ Trusted by local customers
-</p>
-</div>
-
-<p>
-Join us in building a greener future while saving your electricity costs.
-</p>
-
+<p>HD Solars And Traders is a trusted solar service in Haldwani led by Hemant Singh Mehra.</p>
 </div>
 </section>
 
-<!-- SERVICES -->
-<section id="services">
+<section id="services" class="fade">
 <div class="container">
-
-<h2>Our Services</h2>
-
-<p>
-At HD Solars And Traders, we provide complete solar energy solutions tailored to your needs.
-From installation to maintenance, we ensure a smooth and reliable experience.
-</p>
-
+<h2>Services</h2>
 <div class="grid">
-
-<div class="card">
-<h3>⚡ Rooftop Solar Installation</h3>
-<p>
-We provide high-quality rooftop solar panel installations for homes and businesses.
-Our team ensures proper design, installation, and maximum energy efficiency.
-</p>
-<p><b>✔ Customized solutions ✔ High efficiency ✔ Long-lasting systems</b></p>
+<div class="card">Rooftop Installation</div>
+<div class="card">Subsidy Help</div>
+<div class="card">Maintenance</div>
+<div class="card">On/Off Grid</div>
 </div>
-
-<div class="card">
-<h3>📄 Government Subsidy Assistance</h3>
-<p>
-We guide you through the entire government subsidy process, including registration
-and documentation, so you can save more on your solar investment.
-</p>
-<p><b>✔ Easy process ✔ Full support ✔ Maximum savings</b></p>
-</div>
-
-<div class="card">
-<h3>🛠 Solar Maintenance & Repair</h3>
-<p>
-Regular maintenance is essential for performance. We offer inspection,
-cleaning, and repair services to keep your system running efficiently.
-</p>
-<p><b>✔ Performance check ✔ Quick repair ✔ Long-term reliability</b></p>
-</div>
-
-<div class="card">
-<h3>🔌 On-grid & Off-grid Solutions</h3>
-<p>
-Whether you want to stay connected to the grid or go completely independent,
-we provide both on-grid and off-grid solar systems as per your requirement.
-</p>
-<p><b>✔ Flexible options ✔ Reliable backup ✔ Energy independence</b></p>
-</div>
-
-</div>
-
-<br>
-
-<div class="card">
-<h3>🌞 Why Go Solar?</h3>
-<p>
-Switching to solar energy is not just an investment, it's a smart decision for your future.
-Reduce electricity bills, increase property value, and contribute to a cleaner environment.
-</p>
-
-<p>
-✔ Lower electricity costs <br>
-✔ Eco-friendly energy <br>
-✔ Government incentives available <br>
-✔ Long-term savings
-</p>
-</div>
-
 </div>
 </section>
 
-<div class="card">
-<h3>🔋 Trusted Solar Panel Brands We Offer</h3>
-
-<p>
-We work with <b>India’s top solar panel manufacturers</b> to ensure 
-<strong>high efficiency, durability, and long-term performance</strong>.
-</p>
-
-<p>
-<span class="brand">Tata Power Solar</span> • 
-<span class="brand">Waaree Energies</span> • 
-<span class="brand">Adani Solar</span> • 
-<span class="brand">Vikram Solar</span> • 
-<span class="brand">Saatvik Solar</span>
-</p>
-
-<p>
-Our experts help you choose the <b>best brand based on your budget and energy needs</b>,
-so you get maximum value from your solar investment.
-</p>
-
-<p><b>✔ Certified brands ✔ High performance ✔ Long lifespan</b></p>
-</div>
-
-<!-- WHY US -->
-<section id="why">
+<section id="why" class="fade">
 <div class="container">
-
 <h2>Why Choose Us</h2>
-
-<p>
-At HD Solars And Traders, we focus on quality, trust, and customer satisfaction.
-We don’t just install solar panels — we provide complete solutions you can rely on.
-</p>
-
 <div class="grid">
-
-<div class="card">
-<h3>✔ Trusted Local Expertise</h3>
-<p>
-We understand the local requirements of Haldwani and provide solutions tailored to your needs.
-</p>
+<div class="card">Trusted Service</div>
+<div class="card">Affordable</div>
+<div class="card">Fast Installation</div>
 </div>
-
-<div class="card">
-<h3>✔ Affordable & Transparent Pricing</h3>
-<p>
-No hidden charges. We offer honest pricing with maximum value for your investment.
-</p>
-</div>
-
-<div class="card">
-<h3>✔ End-to-End Service</h3>
-<p>
-From site inspection to installation and subsidy support, we handle everything for you.
-</p>
-</div>
-
-<div class="card">
-<h3>✔ High-Quality Materials</h3>
-<p>
-We use reliable and durable solar panels to ensure long-term performance.
-</p>
-</div>
-
-<div class="card">
-<h3>✔ Fast & Professional Installation</h3>
-<p>
-Our experienced team ensures timely and efficient installation with minimal hassle.
-</p>
-</div>
-
-<div class="card">
-<h3>✔ Customer Satisfaction First</h3>
-<p>
-Your satisfaction is our priority. We aim to build long-term trust with every customer.
-</p>
-</div>
-
-</div>
-
-<br>
-
-<div class="card">
-<p>
-🌟 Hundreds of customers trust us for their solar needs.  
-We are committed to helping you save money and move towards a greener future.
-</p>
-</div>
-
 </div>
 </section>
 
-<!-- PROCESS -->
-<section id="process">
+<section id="process" class="fade">
 <div class="container">
-
-<h2>Our Process</h2>
-
-<p>
-We follow a simple, transparent, and efficient process to ensure a smooth solar installation experience for you.
-</p>
-
+<h2>Process</h2>
 <div class="grid">
-
-<div class="card">
-<h3>1️⃣ Site Visit & Inspection</h3>
-<p>
-Our team visits your location to understand your energy needs, roof space, and installation requirements.
-</p>
+<div class="card">Site Visit</div>
+<div class="card">Estimate</div>
+<div class="card">Installation</div>
+<div class="card">Support</div>
 </div>
-
-<div class="card">
-<h3>2️⃣ Cost Estimation & Planning</h3>
-<p>
-We provide a clear estimate and suggest the best solar solution tailored to your budget and usage.
-</p>
-</div>
-
-<div class="card">
-<h3>3️⃣ Installation</h3>
-<p>
-Our skilled technicians install the system professionally, ensuring safety and maximum efficiency.
-</p>
-</div>
-
-<div class="card">
-<h3>4️⃣ Government Subsidy Support</h3>
-<p>
-We assist you in completing all necessary documentation and registration for subsidy benefits.
-</p>
-</div>
-
-<div class="card">
-<h3>5️⃣ Testing & Activation</h3>
-<p>
-We test the system thoroughly and ensure everything is working perfectly before handover.
-</p>
-</div>
-
-<div class="card">
-<h3>6️⃣ Ongoing Support</h3>
-<p>
-We provide maintenance guidance and support whenever needed to keep your system running smoothly.
-</p>
-</div>
-
-</div>
-
-<br>
-
-<div class="card">
-<p>
-🔋 From start to finish, we ensure a hassle-free and transparent process so you can switch to solar with confidence.
-</p>
-</div>
-
 </div>
 </section>
 
-
-<!-- CONTACT -->
-<section id="contact">
+<section class="testimonial fade">
 <div class="container">
-
-<h2>Contact Us</h2>
-
-<p>
-Have questions or ready to switch to solar?  
-Get in touch with us today — we’re here to help you every step of the way.
-</p>
-
+<h2>Testimonials</h2>
 <div class="grid">
-
-<div class="card">
-<h3>📞 Call Us</h3>
-<p>+91 9412101513</p>
+<div class="card">"Excellent service!" ⭐⭐⭐⭐⭐</div>
+<div class="card">"Saved money!" ⭐⭐⭐⭐⭐</div>
+<div class="card">"Highly recommended!" ⭐⭐⭐⭐⭐</div>
 </div>
-
-<div class="card">
-<h3>👨‍🔧 Owner</h3>
-<p>Hemant Singh Mehra</p>
 </div>
+</section>
 
-<div class="card">
-<h3>📍 Location</h3>
-<p>Kamalwaganja Road, Near DAV School, Haldwani, Uttarakhand</p>
-</div>
+<section id="contact" class="fade">
+<div class="container">
+<h2>Contact</h2>
+<p>📞 9412101513</p>
+<p>📍 Haldwani, Uttarakhand</p>
 
-</div>
-
-<br>
-
-<div class="card">
-<h3>💬 Quick Contact</h3>
-<p>
-Click below to chat with us directly on WhatsApp and get instant assistance.
-</p>
-
-<a class="btn" href="https://wa.me/919412101513" target="_blank">
-Chat on WhatsApp 🚀
-</a>
-</div>
-
-<br>
-
-<p><b>Find us on map:</b></p>
-
-<iframe 
-src="https://maps.google.com/maps?q=Kamalwaganja%20Road%20Near%20DAV%20School%20Haldwani&t=&z=15&ie=UTF8&iwloc=&output=embed"
-width="100%" 
-height="300" 
-style="border:0;"
-loading="lazy">
-</iframe>
-
-<br><br>
-
-<a href="https://www.google.com/maps?q=Kamalwaganja+Road+Near+DAV+School+Haldwani" 
-target="_blank" 
-class="btn">
-Get Directions 📍
-</a>
+<iframe src="https://maps.google.com/maps?q=Haldwani&output=embed" width="100%" height="300"></iframe>
 
 </div>
 </section>
 
-<footer>
-<p>© 2026 HD Solars And Traders</p>
-</footer>
+<a href="https://wa.me/919412101513" class="whatsapp">💬</a>
+
+<script>
+// COUNTER
+let count = 0;
+let target = 150;
+let interval = setInterval(()=>{
+    count++;
+    document.getElementById("counter").innerText = count + "+";
+    if(count>=target) clearInterval(interval);
+},20);
+
+// SCROLL ANIMATION
+let elements = document.querySelectorAll(".fade");
+window.addEventListener("scroll", ()=>{
+    elements.forEach(el=>{
+        if(el.getBoundingClientRect().top < window.innerHeight - 100){
+            el.classList.add("show");
+        }
+    });
+});
+</script>
 
 </body>
 </html>
-
-
-
-
 
 
 

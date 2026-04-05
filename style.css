@@ -10,7 +10,7 @@ body {
 }
 /* HERO */
 header {
-    background: url('solar-bg.jpg') center/cover no-repeat;
+   background: url('solar-bg.jpg');
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -18,9 +18,7 @@ header {
     align-items: center;
 }
 
-header {
-    background: url('solar-bg.jpg') center/cover no-repeat;
-}
+
 
 /* VIDEO BACKGROUND */
 .bg-video {

@@ -1,54 +1,78 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(to bottom right, #e3f2fd, #f3e8ff);
+    background: #eef2f7;
     color: #1f2937;
-    scroll-behavior: smooth;
 }
 
-/* HEADER / HERO */
+body {
+    background: #fdf6ec;
+}
+/* HERO */
 header {
     background: url('solar-bg.jpg') center/cover no-repeat;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
-    text-align: center;
-    position: relative;
 }
 
-header::before {
-    content: "";
+/* VIDEO BACKGROUND */
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+
+/* DARK OVERLAY */
+.overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.6);
     top: 0;
     left: 0;
+    z-index: -1;
 }
 
-header * {
-    position: relative;
-    z-index: 1;
+/* LOGO */
+.logo {
+    width: 120px;
+    margin-top: 30px;
 }
 
+/* HEADING */
 header h1 {
     font-size: 48px;
-    margin: 0;
+    margin: 10px 0;
 }
 
+/* GRADIENT TEXT */
+.gradient-text {
+    background: linear-gradient(to right, #38bdf8, #7c3aed);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* PARAGRAPH */
 header p {
     font-size: 20px;
-    margin-top: 10px;
-    background: rgba(0,0,0,0.4);
-    padding: 6px 12px;
+    background: rgba(0,0,0,0.5);
+    padding: 8px 15px;
     border-radius: 6px;
+    display: inline-block;
 }
 
 /* BUTTON */
 .btn {
+    display: inline-block;
     margin-top: 20px;
     background: linear-gradient(to right, #2563eb, #7c3aed);
     color: white;
@@ -65,9 +89,9 @@ header p {
 
 /* NAVBAR */
 nav {
-    background: linear-gradient(to right, #0d47a1, #1e3a8a);
-    padding: 15px;
+    background: #1e3a8a;
     text-align: center;
+    padding: 15px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -89,6 +113,10 @@ section {
     padding: 80px 20px;
 }
 
+.card, .box {
+    background: #ffffff;
+}
+
 .container {
     max-width: 1100px;
     margin: auto;
@@ -97,16 +125,16 @@ section {
 /* GRID */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 20px;
 }
 
-/* CARDS */
+/* CARD */
 .card {
     background: white;
     padding: 25px;
     border-radius: 12px;
-    border-left: 4px solid #0d47a1;
+    border-left: 4px solid #2563eb;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: 0.3s;
 }
@@ -120,10 +148,7 @@ section {
 h2 {
     font-size: 30px;
     margin-bottom: 20px;
-    background: linear-gradient(to right, #0d47a1, #7c3aed);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: #1e3a8a;
 }
 
 /* TEXT */
@@ -132,42 +157,23 @@ p {
     color: #374151;
 }
 
-/* COUNTER */
-.counter {
-    font-size: 40px;
+/* BRAND TAG */
+.brand {
     font-weight: bold;
-    color: #2563eb;
-    text-align: center;
+    background: #e0e7ff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin: 5px;
+    display: inline-block;
 }
 
-/* TESTIMONIAL */
-.testimonial {
-    background: #f3f4f6;
-}
-
-/* WHATSAPP BUTTON */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
+/* CONTACT BUTTON */
+.cta {
+    background: linear-gradient(to right, #2563eb, #7c3aed);
     color: white;
-    padding: 15px;
-    border-radius: 50%;
-    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 6px;
     text-decoration: none;
-}
-
-/* SCROLL ANIMATION */
-.fade {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 0.6s;
-}
-
-.fade.show {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 /* MAP */
@@ -176,6 +182,32 @@ iframe {
 }
 
 /* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e3a8a;
+    color: white;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+}
+
+.hero-text {
+    color: white;
+    font-size: 20px;
+    background: rgba(0,0,0,0.6);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+}
 footer {
     text-align: center;
     padding: 20px;

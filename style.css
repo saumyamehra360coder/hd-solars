@@ -18,6 +18,10 @@ header {
     align-items: center;
 }
 
+header {
+    background: url('solar-bg.jpg') center/cover no-repeat;
+}
+
 /* VIDEO BACKGROUND */
 .bg-video {
     position: absolute;
@@ -44,7 +48,7 @@ header {
 /* LOGO */
 .logo {
     width: 120px;
-    margin-top: 30px;
+    height: auto;
 }
 
 /* HEADING */
